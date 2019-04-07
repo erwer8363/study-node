@@ -1,0 +1,17 @@
+{
+  "name": "studynode",
+  "version": "1.0.0",
+  "description": "to learn node.js",
+  "main": "helloNode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "ever",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
