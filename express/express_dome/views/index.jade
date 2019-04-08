@@ -1,0 +1,29 @@
+//- extends layout
+
+//- block content
+//-   h1= title
+//-   p Welcome to #{title}
+h1 Jade Includes Example
+include includes/footer
+- var name = 'Ever'
+- users = ['Sally', 'Joseph', 'Michael', 'Sanjay']
+section#wrapper
+  h2 Basic Structure #{name}!
+  section
+    p
+      span This is a span within a p within a div
+    - for user in users
+      p= user
+    -obj = {first_name: 'zhang', surname: 'Ornal'}
+    - each key, value in obj
+      li #{key}, #{value}
+section#myWrapper
+  - battles = ['John', 'Rany', 'Paul', 'Gorge']
+  - each battle in battles
+    ul
+      li #{battle}
+  - raining = false
+  - if (raining)
+    p It is raining, you should bring umbraller
+  - else
+    p No rain, take the bike
